@@ -39,6 +39,11 @@ Claude Code skills (`skills/<name>/SKILL.md`). Copy the ones you want into `~/.c
   `retur`, `strings`): describe one person's hardware, template and controller mappings. They are
   examples to adapt, not general guidance. Regenerate yours with `als_track_map.py`.
 
+## `ableton-mcp/`
+A self-contained copy of ableton-mcp (MIT) carrying the MCP tools these scripts and skills call
+(stem sync, arrangement, routing) plus rack, device-path and `.adg` preset tools. See
+[`ableton-mcp/STUDIO.md`](ableton-mcp/STUDIO.md) for what it adds, how to install it, and its telemetry default.
+
 ## Known limits
 - Live's Python API cannot create warp markers (`Clip.add_warp_marker` accepts only Live's own marker objects),
   so warp points cannot be copied between clips from a script; edit the `.als` instead.
